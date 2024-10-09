@@ -1,0 +1,42 @@
+int x= 160;
+int y= 160;
+void main (){
+  animate(ejecutar);
+ 
+}
+
+void ejecutar(){
+  player();
+  controles();
+}
+
+
+void player(){
+  background(0,0,0);
+  ellipse(x,y,30,30);
+ 
+}
+void controles(){
+  if (keyPressed && key =="up")
+     y =  y - 3;
+    if (keyPressed && key == "down")
+      y = y + 3;
+    if (keyPressed && key == "left")
+      x = x - 3;
+    if (keyPressed && key == "right")
+      x = x + 3;
+  
+}
+void draw() {
+  background(0,0,0);
+  ellipse(x,y,30,30);
+  if (x < 130 && keyPressed && key =="left"); 
+    x = x + 3;
+    if (x > -130 && keyPressed && key =="right");
+    x = x - 3;
+    if (y < 130 && keyPressed && key =="up");
+      y = y + 3;
+  if (y > 130 && keyPressed && key =="down") ;
+  y = y - 3;
+      
+}
