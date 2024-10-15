@@ -16,5 +16,7 @@ void main(){
 void otra(){
   background(255,0,0);
     if(mousePressed)
+      if (mouseButton == RIGHTBUTTON){
     animate(dibuja);
+}
 }
